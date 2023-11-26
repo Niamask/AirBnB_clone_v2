@@ -60,10 +60,9 @@ def number_odd_or_even(n=None):
     """
     if isinstance(n, int):
         if n % 2:
-            eo = "odd"
+            return render_template("6-number_odd_or_even.html", n=n, text="even")
         else:
-            eo = "even"
-        return render_template("6-number_odd_or_even.html", n=n, eo=eo)
+            return render_template("6-number_odd_or_even.html", n=n, text="odd")
 
 
 if __name__ == "__main__":
