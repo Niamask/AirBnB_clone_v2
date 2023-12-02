@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 @app.teardown_appcontext
 def close(self):
-    #  Method to close the session 
+    #  Method to close the session
     storage.close()
 
 
